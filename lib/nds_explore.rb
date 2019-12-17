@@ -10,7 +10,8 @@ end
 def print_first_directors_movie_titles
   counter = 0 
   while counter < directors_database.length
-    pp "#{directors_database[counter]}"
+    # we want directors_database[0][1 (which should be the hash of :movies)][0 or :title (but we want this to loop through)]
+    pp directors_database[0][:movies][counter]
     counter += 1
   end
 end
