@@ -10,7 +10,7 @@ end
 def print_first_directors_movie_titles
   counter = 0 
   while counter < directors_database.length
-    pp #{directors_database[counter]}
+    pp "#{directors_database[counter]}"
     counter += 1
   end
 end
